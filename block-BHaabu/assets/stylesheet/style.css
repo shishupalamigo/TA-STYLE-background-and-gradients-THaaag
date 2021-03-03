@@ -1,0 +1,115 @@
+/* ERIC MAYER'S CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS RESET ENDS HERE  */
+
+/* CUSTOM STYLES */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+/* FLEX */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* BODY */
+body {
+    background: linear-gradient( to right, rgba(39, 39, 38, 0.3), rgba(39, 39, 38, 0.3)),
+                url(../media/body-bg-2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+/* HEADER */
+.header {
+    text-align: center;
+    margin: 1em auto 3em auto;
+}
+.header  h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+/* MAIN */
+.box-container {
+    justify-content: space-around;
+}
+.box{
+    width: 250px;
+    height: 150px;
+    border-radius: 6px; 
+}
+p {
+    font-size: 20px;
+    color: black;
+}
+
+.box-1 {
+    background: #FA4446;
+}
+.box-2 {
+    background: linear-gradient( to right, #000, #FA4446);
+}
+.box-3 {
+    background: radial-gradient(#fa4446 35%, #000);
+}
+
+/* BOX 4 */
+.box-4 {
+    width: 70%;
+    height: 50vh;
+    background: linear-gradient( to right, rgba(241, 163, 17, 0.3), rgba(241, 163, 17, .3)), 
+                url("../media/box-4-bg.jpg") no-repeat;                ;
+    background-size: cover;
+    margin: 4em auto 0 auto;
+    border-radius: 12px;
+}
