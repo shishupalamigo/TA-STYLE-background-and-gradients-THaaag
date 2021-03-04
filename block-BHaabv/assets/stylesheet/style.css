@@ -1,0 +1,250 @@
+/* ERIC MEYER'S RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS RESET ENDS HERE */
+
+/* BODY */
+body {
+    line-height: 1.5;
+    background: #202230;
+    color: #fff;
+}
+
+/* BOX SIZING */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* COMMON FEATURES */
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+p {
+    color: #7E87A6;
+    font-weight: 100;
+}
+/* PAGE HEADER */
+.page-header {
+    margin-top: 2em;
+}
+.page-header h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+/* DARK MODE */
+.dark-mode {
+    padding-top: 1em;
+}
+.dark-mode p {
+    font-weight: 700;
+    padding-right: .5em;
+}
+/* TOGGLE SWITCH */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  /* SLIDER */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #717174, rgb(67,199,148));
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 2.5px;
+    background-color: #202230;
+  }
+  /* ROUNDED SLIDER  */
+  .slider.round {
+    border-radius: 30px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  /* TOGGLE SWITCH ENDS */
+
+  /* MAIN CONTENT */
+ .followers-section {
+    margin-top: 3em;
+ }
+ .followers-box {
+     width: 18vw;
+     height: 35vh;
+     background: #252B43;
+     padding: 1em;
+     border-radius: 8px;
+     border-top: 3px solid #1A8FF6;
+ }
+ .followers-box a {
+     color: #8791B5;
+ }
+ .followers-box a i {
+     font-size: 20px;
+     color: #1790F5;
+     padding-right: .4em;
+ }
+ .followers-box h2 {
+     font-size: 56px;
+     font-weight: 900;
+ }
+ .followers-box .followers-p {
+     letter-spacing: 2px;
+     margin-top: -3em;
+ }
+ .green {
+     color: #37A28E;
+ }
+ .insta-box {
+     border-top: none;
+     position: relative;
+ }
+ .border-div {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, #F8BE6A, #E15694);
+    position: absolute;
+    top: 0;
+    border-radius: 6px;
+}
+ .followers-box.insta-box i {
+     color:#E15694;
+ }
+ .youtube-box {
+     border-top: 3px solid crimson;
+ }
+ .followers-box.youtube-box i {
+     color: crimson;
+ }
+ .red {
+    color: crimson;
+ }
+ /* ICON'S COLORS AND FONT  */
+ .fa-facebook-square, .fa-twitter {
+     color: #1790F5;
+     font-size: 20px;
+ }
+ .fa-instagram {
+     color: #E15694;
+     font-size: 20px;
+ }
+ .fa-youtube {
+     color: crimson;
+     font-size: 20px;
+ }
+ /*     OVERVIEW SECTION */
+
+ .overview-section {
+     margin-top: 3em;
+     margin-bottom: 3em;
+ }
+ .overview-section h2 {
+     font-size: 36px;
+     margin-bottom: 1em;
+ }
+ .overview-top {
+     margin-bottom: 3em;
+ }
+ .likes-view {
+     width: 18vw;
+     height: 15vh;
+     background: #252B43; 
+     padding: .5em;    
+     border-radius: 6px;
+ }
+.likes-view aside {
+    justify-content: space-between;
+    height: 100%;
+}
+.likes-view aside h3 {
+    font-size: 24px;
+    font-weight: 900;
+}

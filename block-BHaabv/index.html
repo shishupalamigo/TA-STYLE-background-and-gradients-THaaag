@@ -1,0 +1,202 @@
+<!-- writeCode
+
+- Create a layout according to the design shown below.
+
+![Backgrounds and gradients level 2](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/background-and-gradients/ex-2.jpg)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Work on typography in detail. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment II | Backgrounds and Gradients</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <!-- FONTAWESOME ICONS -->
+    <script 
+            src="https://kit.fontawesome.com/d77ac583c4.js" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <!-- PAGE HEADER -->
+    <header class="page-header flex container">
+        <div class="title-div">
+            <h1>Social Media Dashboard</h1>
+            <p>Total Followers: 23,004</p>
+        </div>
+        <div class="dark-mode center">
+            <p>Dark Mode</p>
+            <!-- TOGGLE SWITCH -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            <!-- / TOGGLE SWITCH -->
+        </div>
+    </header>
+    <!-- / PAGE-HEADER -->
+    <!-- MAIN CONTENT -->
+    <main class="main container">
+        <!-- FOLLOWERS SECTION -->
+       <secttion class="followers-section flex">
+        <div class="followers-box column">
+            <a href="#">
+                <i class="fab fa-facebook-square"></i>@nathanf
+            </a>
+             <h2>1987</h2>
+             <p class="followers-p">FOLLOWERS</p>
+             <p>
+                 <span class="green">&#9652; 12 Today</span>
+             </p>
+        </div>
+        <div class="followers-box column">
+            <a href="#">
+                <i class="fab fa-twitter"></i>@nathanf
+            </a>
+             <h2>1044</h2>
+             <p class="followers-p">FOLLOWERS</p>
+             <p>
+                 <span class="green">&#9652; 99 Today</span>
+             </p>
+        </div>
+        <div class="followers-box column insta-box">
+            <div class="border-div"></div>
+            <a href="#">
+                <i class="fab fa-instagram"></i>@realnathanf
+            </a>
+             <h2>11k</h2>
+             <p class="followers-p">FOLLOWERS</p>
+             <p>
+                 <span class="green">&#9652; 1099 Today</span>
+             </p>
+        </div>
+        <div class="followers-box column youtube-box">
+            <a href="#">
+                <i class="fab fa-youtube"></i>Nathan F.
+            </a>
+             <h2>8239</h2>
+             <p class="followers-p">SUBSCRIBERS</p>
+             <p>
+                 <span class="red">&#9662; 144 Today</span>
+             </p>
+        </div>
+       </secttion>
+       <!-- / FOLLOWES SECTION -->
+
+       <!-- OVERVIEW SECTION -->
+       <section class="overview-section">
+           <h2>Overview- Today</h2>
+           <div class="overview-top flex">
+               <div class="likes-view flex">
+                 <aside class="column">
+                     <p>Page Views</p>
+                      <h3>87</h3>
+                 </aside>
+                 <aside class="column">
+                    <a href="#">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <p class="green">&#9652; 3%</p>
+                 </aside>
+               </div>
+               <div class="likes-view flex">
+                <aside class="column">
+                    <p>Likes</p>
+                     <h3>87</h3>
+                </aside>
+                <aside class="column">
+                   <a href="#">
+                       <i class="fab fa-facebook-square"></i>
+                   </a>
+                   <p class="red">&#9662; 2%</p>
+                </aside>
+              </div>
+              <div class="likes-view flex">
+                <aside class="column">
+                    <p>Likes</p>
+                     <h3>5462</h3>
+                </aside>
+                <aside class="column">
+                   <a href="#">
+                       <i class="fab fa-instagram"></i>
+                   </a>
+                   <p class="green">&#9652; 2257%</p>
+                </aside>
+              </div>
+              <div class="likes-view flex">
+                <aside class="column">
+                    <p>Profile Views</p>
+                     <h3>52k</h3>
+                </aside>
+                <aside class="column">
+                   <a href="#">
+                       <i class="fab fa-instagram"></i>
+                   </a>
+                   <p class="green">&#9652; 1375%</p>
+                </aside>
+              </div>
+           </div>
+           <div class="overview-bottom flex">
+            <div class="likes-view flex">
+              <aside class="column">
+                  <p>Retweets</p>
+                   <h3>117</h3>
+              </aside>
+              <aside class="column">
+                 <a href="#">
+                     <i class="fab fa-twitter"></i>
+                 </a>
+                 <p class="green">&#9652; 303%</p>
+              </aside>
+            </div>
+            <div class="likes-view flex">
+             <aside class="column">
+                 <p>Likes</p>
+                  <h3>507</h3>
+             </aside>
+             <aside class="column">
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <p class="green">&#9652; 553%</p>
+             </aside>
+           </div>
+           <div class="likes-view flex">
+             <aside class="column">
+                 <p>Likes</p>
+                  <h3>107</h3>
+             </aside>
+             <aside class="column">
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <p class="red">&#9662; 19%</p>
+             </aside>
+           </div>
+           <div class="likes-view flex">
+             <aside class="column">
+                 <p>Total Views</p>
+                  <h3>1407</h3>
+             </aside>
+             <aside class="column">
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <p class="red">&#9662; 12%</p>
+             </aside>
+           </div>
+        </div>
+       </section>
+       <!-- / OVERVIEW SECTION -->
+
+    </main>
+    <!-- / MAIN CONTENT -->
+
+</body>
+</html>
